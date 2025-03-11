@@ -11,6 +11,13 @@ const react = {
   },
 };
 
+const reactDOM = {
+    render: function(element,root)
+    {
+        root.append(element);
+    }
+}
+
 const header1 = react.createElement(
   "h1",
   {
@@ -45,5 +52,11 @@ const header2 = react.createElement(
 // header2.style.color = "black";
 
 const root = document.getElementById("root");
-root.append(header1);
-root.append(header2);
+// root.append(header1);
+// root.append(header2);
+
+// reactDOM.render(header1,document.getElementById('root'));
+// reactDOM.render(header2,document.getElementById('root'));
+// or 
+reactDOM.render(header1,root);
+reactDOM.render(header2,root);
