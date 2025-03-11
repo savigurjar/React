@@ -1,19 +1,36 @@
 // create element throght js
-
+// const sty = { fontSize: "30px", backgroundColor: "blue", color: white };
 const react = {
-    createElement: function(tag, style, children) {
-        const element = document.createElement(tag);
-        element.innerText = children;
-        return element;
+  createElement: function (tag, styles, children) {
+    const element = document.createElement(tag);
+    element.innerText = children;
+    for (let key in styles) {
+      element.style[key] = styles[key];
     }
-}
+    return element;
+  },
+};
 
-const header1 = react.createElement('h1', {}, "Hello Coder Army");
-const header2 = react.createElement('h1', {}, "Hello Coders");
+const header1 = react.createElement(
+  "h1",
+  {
+    fontSize: "30px",
+    backgroundColor: "blue",
+    color:" white",
+  },
+  "Hello Coder Army"
+);
+const header2 = react.createElement(
+  "h1",
+  {
+    fontSize: "20px",
+    backgroundColor: "black",
+    color: "white",
+  },
+  "Hello Coders"
+);
 
 // console.log(header1, header2);
-
-
 
 // const header1 = document.createElement('h1');
 // header1.innerHTML = "Hello Coder Army";
@@ -27,6 +44,6 @@ const header2 = react.createElement('h1', {}, "Hello Coders");
 // header2.style.fontSize = "30px";
 // header2.style.color = "black";
 
-const root = document.getElementById('root');
+const root = document.getElementById("root");
 root.append(header1);
 root.append(header2);
