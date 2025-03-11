@@ -1,5 +1,11 @@
 // create element throght js
 
+const react = {
+    createElement: function(tag,property,children){
+        const element = document.createElement(tag);
+    }
+}
+
 const header1 = document.createElement('h1');
 header1.innerHTML = "Hello Coder Army";
 header1.style.backgroundColor = "blue";
