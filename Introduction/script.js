@@ -3,7 +3,17 @@
 const react = {
   createElement: function (tag, styles, children) {
     const element = document.createElement(tag);
-    element.innerText = children;
+
+    if (typeof children === "object") {
+       for(let val of children)
+       {
+        element.append(val);
+       }
+
+    } else {
+      element.innerText = children;
+    }
+
     for (let key in styles) {
       element.style[key] = styles[key];
     }
@@ -12,18 +22,17 @@ const react = {
 };
 
 const reactDOM = {
-    render: function(element,root)
-    {
-        root.append(element);
-    }
-}
+  render: function (element, root) {
+    root.append(element);
+  },
+};
 
 const header1 = react.createElement(
   "h1",
   {
     fontSize: "30px",
     backgroundColor: "blue",
-    color:" white",
+    color: " white",
   },
   "Hello Coder Army"
 );
@@ -57,6 +66,20 @@ const root = document.getElementById("root");
 
 // reactDOM.render(header1,document.getElementById('root'));
 // reactDOM.render(header2,document.getElementById('root'));
-// or 
-reactDOM.render(header1,root);
-reactDOM.render(header2,root);
+// or
+reactDOM.render(header1, root);
+reactDOM.render(header2, root);
+
+const list0 = react.createElement("li", {}, "onepiece");
+const list1 = react.createElement("li", {}, "haikyu");
+const list2 = react.createElement("li", {}, "demon slayer");
+const Unorderlist = react.createElement(
+  "ul",
+  {
+    fontSize: "20px",
+    backgroundColor: "black",
+    color: "white",
+  },
+  [list0, list1, list2]
+);
+reactDOM.render(Unorderlist, root);
