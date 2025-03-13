@@ -25,3 +25,5 @@ const div1 = React.createElement("div", {}, [element, element2]);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(element);
 root.render(div1);
+
+
