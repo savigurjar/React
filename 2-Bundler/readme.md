@@ -64,3 +64,4 @@ import ReactDOM from "react-dom/client";
 
 <!-- bundler ->vite,webpack,parcel -->
 <!-- extra space,comments,code jo use me nhi ho -> unko htakr ek bundle teyar krta h -->
+<!-- we will use parcel -->
