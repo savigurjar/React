@@ -1,0 +1,24 @@
+{
+  "name": "reactbasic",
+  "version": "1.0.0",
+  "description": "\"learning react\"",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/savigurjar/React.git"
+  },
+  "author": "savi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/savigurjar/React/issues"
+  },
+  "homepage": "https://github.com/savigurjar/React#readme",
+  "dependencies": {
+    "parcel": "^2.13.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
