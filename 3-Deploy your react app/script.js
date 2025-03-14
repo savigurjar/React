@@ -40,23 +40,27 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 // javascript expression
 const names = "tae";
 const obj = {
-  name : "v",
-  age : 30
-}
-const obj2 ={
-  backgroundColor : "black",
-  color:"pink"
-}
-
-// react component
-// type : class based , function based 
-// 2 : function 
-function greet()
-{
-  return <h1>or kese ho</h1>
+  name: "v",
+  age: 30,
+};
+const obj2 = {
+  backgroundColor: "black",
+  color: "pink",
 };
 
-const newe = greet();
+// react component
+// type : class based , function based
+// 2 : function
+function greet() {
+  return <h1>or kese ho</h1>;
+}
+
+// const newe = greet();
+function meet() {
+  return <h1> ho</h1>;
+}
+
+// const newel = meet();
 
 // react element
 const ele = (
@@ -69,4 +73,10 @@ const ele = (
   </>
 );
 root.render(ele);
-root.render(newe);
+// root.render(newe);
+root.render(
+  <>
+    {greet()}
+    {meet()}
+  </>
+);
