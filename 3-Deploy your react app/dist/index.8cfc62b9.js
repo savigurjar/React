@@ -2994,6 +2994,17 @@ const obj2 = {
 };
 // react component
 // type : class based , function based 
+// 2 : function 
+function greet() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        children: "or kese ho"
+    }, void 0, false, {
+        fileName: "script.js",
+        lineNumber: 56,
+        columnNumber: 10
+    }, this);
+}
+const newe = greet();
 // react element
 const ele = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
     children: [
@@ -3005,7 +3016,7 @@ const ele = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment
             ]
         }, void 0, true, {
             fileName: "script.js",
-            lineNumber: 57,
+            lineNumber: 64,
             columnNumber: 5
         }, undefined),
         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -3016,7 +3027,7 @@ const ele = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment
             ]
         }, void 0, true, {
             fileName: "script.js",
-            lineNumber: 58,
+            lineNumber: 65,
             columnNumber: 5
         }, undefined),
         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -3024,7 +3035,7 @@ const ele = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment
             children: "by"
         }, void 0, false, {
             fileName: "script.js",
-            lineNumber: 59,
+            lineNumber: 66,
             columnNumber: 5
         }, undefined),
         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -3032,7 +3043,7 @@ const ele = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment
             children: "y"
         }, void 0, false, {
             fileName: "script.js",
-            lineNumber: 60,
+            lineNumber: 67,
             columnNumber: 5
         }, undefined),
         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -3040,12 +3051,13 @@ const ele = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment
             children: "yoo"
         }, void 0, false, {
             fileName: "script.js",
-            lineNumber: 61,
+            lineNumber: 68,
             columnNumber: 5
         }, undefined)
     ]
 }, void 0, true);
 root.render(ele);
+root.render(newe);
 
   $parcel$ReactRefreshHelpers$595d.postlude(module);
 } finally {

@@ -50,6 +50,13 @@ const obj2 ={
 
 // react component
 // type : class based , function based 
+// 2 : function 
+function greet()
+{
+  return <h1>or kese ho</h1>
+};
+
+const newe = greet();
 
 // react element
 const ele = (
@@ -62,3 +69,4 @@ const ele = (
   </>
 );
 root.render(ele);
+root.render(newe);
