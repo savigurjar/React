@@ -47,6 +47,11 @@ const obj2 ={
   backgroundColor : "black",
   color:"pink"
 }
+
+// react component
+// type : class based , function based 
+
+// react element
 const ele = (
   <>
     <h1 className="heading">hii {names}</h1>

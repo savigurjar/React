@@ -2992,6 +2992,9 @@ const obj2 = {
     backgroundColor: "black",
     color: "pink"
 };
+// react component
+// type : class based , function based 
+// react element
 const ele = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
     children: [
         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -3002,7 +3005,7 @@ const ele = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment
             ]
         }, void 0, true, {
             fileName: "script.js",
-            lineNumber: 52,
+            lineNumber: 57,
             columnNumber: 5
         }, undefined),
         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -3013,7 +3016,7 @@ const ele = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment
             ]
         }, void 0, true, {
             fileName: "script.js",
-            lineNumber: 53,
+            lineNumber: 58,
             columnNumber: 5
         }, undefined),
         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -3021,7 +3024,7 @@ const ele = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment
             children: "by"
         }, void 0, false, {
             fileName: "script.js",
-            lineNumber: 54,
+            lineNumber: 59,
             columnNumber: 5
         }, undefined),
         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -3029,7 +3032,7 @@ const ele = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment
             children: "y"
         }, void 0, false, {
             fileName: "script.js",
-            lineNumber: 55,
+            lineNumber: 60,
             columnNumber: 5
         }, undefined),
         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -3037,7 +3040,7 @@ const ele = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment
             children: "yoo"
         }, void 0, false, {
             fileName: "script.js",
-            lineNumber: 56,
+            lineNumber: 61,
             columnNumber: 5
         }, undefined)
     ]
