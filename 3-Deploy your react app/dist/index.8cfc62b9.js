@@ -2951,44 +2951,98 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
-const element = /*#__PURE__*/ (0, _reactDefault.default).createElement("h1", {
-    id: "first",
-    className: "firstname",
-    style: {
-        backgroundColor: "blue",
-        fontSize: "30px",
-        color: "pink"
-    }
-}, "Hello Coder Army");
-const element2 = /*#__PURE__*/ (0, _reactDefault.default).createElement("h2", {
-    id: "fst",
-    className: "name",
-    style: {
-        backgroundColor: "black",
-        fontSize: "30px",
-        color: "pink"
-    }
-}, "Hello Coders");
-const div1 = /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {}, [
-    element,
-    element2
-]);
+// const element = React.createElement(
+//     "h1",
+//     {
+//       id: "first",
+//       className: "firstname",
+//       style: { backgroundColor: "blue", fontSize: "30px", color: "pink" },
+//     },
+//     "Hello Coder Army"
+//   );
+//   const element2 = React.createElement(
+//     "h2",
+//     {
+//       id: "fst",
+//       className: "name",
+//       style: { backgroundColor: "black", fontSize: "30px", color: "pink" },
+//     },
+//     "Hello Coders"
+//   );
+//   const div1 = React.createElement("div", {}, [element, element2]);
 // document.getElementById("root");
 // ReactDOM.render(element,root); // ---2017
 // 2018 -> js single threaded ->khdu control le rha react element ko
-const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
+// const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(element);
-root.render(div1);
+// root.render(div1);
 //   jsx : javascript xml
 // html jaisa code javascript me likh skte h
-const newEle = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-    children: "OnePiece"
-}, void 0, false, {
-    fileName: "script.js",
-    lineNumber: 38,
-    columnNumber: 16
-}, undefined);
-root.render(newEle); // React.createElement = react element(js object) after render => html file 
+// / React.createElement = react element(js object) after render => html file
+const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
+// const newEle = <h1>OnePiece</h1>;
+// root.render(newEle);
+// javascript expression
+const names = "tae";
+const obj = {
+    name: "v",
+    age: 30
+};
+const obj2 = {
+    backgroundColor: "black",
+    color: "pink"
+};
+const ele = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+    children: [
+        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+            className: "heading",
+            children: [
+                "hii ",
+                names
+            ]
+        }, void 0, true, {
+            fileName: "script.js",
+            lineNumber: 52,
+            columnNumber: 5
+        }, undefined),
+        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+            id: "head2",
+            children: [
+                "byy ",
+                obj.age
+            ]
+        }, void 0, true, {
+            fileName: "script.js",
+            lineNumber: 53,
+            columnNumber: 5
+        }, undefined),
+        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+            money: "hii",
+            children: "by"
+        }, void 0, false, {
+            fileName: "script.js",
+            lineNumber: 54,
+            columnNumber: 5
+        }, undefined),
+        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+            money: 34,
+            children: "y"
+        }, void 0, false, {
+            fileName: "script.js",
+            lineNumber: 55,
+            columnNumber: 5
+        }, undefined),
+        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+            style: obj2,
+            children: "yoo"
+        }, void 0, false, {
+            fileName: "script.js",
+            lineNumber: 56,
+            columnNumber: 5
+        }, undefined)
+    ]
+}, void 0, true);
+root.render(ele);
 
   $parcel$ReactRefreshHelpers$595d.postlude(module);
 } finally {
