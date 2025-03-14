@@ -22,6 +22,7 @@ const element = React.createElement(
   );
   const div1 = React.createElement("div", {}, [element, element2]);
   
+
   // document.getElementById("root");
   // ReactDOM.render(element,root); // ---2017
   
@@ -30,5 +31,13 @@ const element = React.createElement(
   // root.render(element);
   root.render(div1);
   
+
+//   jsx : javascript xml
+// html jaisa code javascript me likh skte h
+
+const newEle = <h1>OnePiece</h1>;
+root.render(newEle);
+
+// React.createElement = react element(js object) after render => html file 
   
   

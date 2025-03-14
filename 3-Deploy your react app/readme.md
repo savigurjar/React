@@ -54,3 +54,11 @@ npm install react-dom -->
 
 import React from "react";
 import ReactDOM from "react-dom/client";
+
+
+
+
+<!-- // React.createElement = react element(js object) after render => html file  -->
+
+<!-- //   jsx : javascript xml
+// html jaisa code javascript me likh skte h -->
