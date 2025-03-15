@@ -37,46 +37,6 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 // const newEle = <h1>OnePiece</h1>;
 // root.render(newEle);
 
-// javascript expression
-const names = "tae";
-const obj = {
-  name: "v",
-  age: 30,
-};
-const obj2 = {
-  backgroundColor: "black",
-  color: "pink",
-};
-
-// react component
-// type : class based , function based
-// 2 : function
-function greet() {
-  return <h1>or kese ho</h1>;
-}
-
-// const newe = greet();
-function meet() {
-  return <h1> ho</h1>;
-}
-
-// const newel = meet();
-
-// react element
-const ele = (
-  <>
-    <h1 className="heading">hii {names}</h1>
-    <h2 id="head2">byy {obj.age}</h2>
-    <h3 money="hii">by</h3>
-    <h3 money={34}>y</h3>
-    <h3 style={obj2}>yoo</h3>
-  </>
-);
-root.render(ele);
-// root.render(newe);
-root.render(
-  <>
-    {greet()}
-    {meet()}
-  </>
-);
+// React.createElement = react element(js object) after render => html file 
+  
+  
