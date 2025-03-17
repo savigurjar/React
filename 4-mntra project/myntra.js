@@ -108,8 +108,9 @@ function App() {
       /> */}
 
       {arr.map((value, index) => (
-        <Card frame={value.frame} offer={value.offer} image={value.image} />
-      ))}
+        <Card key={index} frame={value.frame} offer={value.offer} image={value.image} />
+      ))} 
+       {/* //array return hor rha jo jsx smjta h */}
     </div>
     // footer
   );
