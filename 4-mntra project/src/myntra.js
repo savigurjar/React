@@ -4,13 +4,10 @@ import Card from "./component/Card";
 import Header from "./component/Header";
 import Footer from "./component/Footer";
 import arr from "./utils/dummy";
+
 // import {greet as goa ,meet} from "./utils/dummy"; - rename bhi kr skte h
 
 // component or module - headerfun, footerfun
-
-
-
-// footer
 
 function App() {
   return (
@@ -32,6 +29,7 @@ function App() {
             frame={value.frame}
             offer={value.offer}
             image={value.image}
+            price={value.price}
           />
         ))}
       </div>

@@ -1,5 +1,5 @@
 // Card Component
-function Card({ frame, offer, image }) {
+function Card({ frame, offer, image ,price}) {
     return (
       
       <div className="card"
@@ -28,6 +28,7 @@ function Card({ frame, offer, image }) {
           >
             🛒 Shop Now
           </button>
+          <h2 style={{ color: "black" }}>Price: ₹{price}</h2>
         </div>
       </div>
     );
