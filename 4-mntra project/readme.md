@@ -6,3 +6,5 @@ npm install -D parcel
 
 
 // jsx : js expression -> statement nhi likh skte 
+
+<!-- dommanipulation = react khud krta h -->

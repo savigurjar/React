@@ -40,12 +40,14 @@ const arr = [
       offer: "20-70%",
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdNyKW-mM5QoDFCinUaqJaa0uR8OU9-GT8UQ&s",
+        price:100,
     },
     {
       frame: "Photo Frame",
       offer: "20-70%",
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdNyKW-mM5QoDFCinUaqJaa0uR8OU9-GT8UQ&s",
+        
         price:100,
     },
     {

@@ -41,3 +41,13 @@ body{
 .card{
     background-color: cadetblue;
 }
+.bt{
+    height:50px;
+    background-color: cornflowerblue;
+    color: white;
+    width: 150px;
+    font-size: 20px;
+    border-radius: 30px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
