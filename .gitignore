@@ -1,0 +1,7 @@
+node_modules/
+.bin
+@babel/
+
+.parcel-cache/
+dist/
+package-lock.json
