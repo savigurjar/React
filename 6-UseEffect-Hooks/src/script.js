@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
-import  Colorful  from "./components/Colorfu";
+import Colorful from "./components/Colorfu";
 
 function Main() {
   const [count, setCount] = useState(0);
@@ -8,14 +8,16 @@ function Main() {
     <>
       <div className="counter">
         <h2>Count is : {count}</h2>
-        <button className="btn1"
+        <button
+          className="btn1"
           onClick={() => {
             setCount(count + 1);
           }}
         >
           Increment
         </button>
-        <button className="btn2"
+        <button
+          className="btn2"
           onClick={() => {
             setCount(count - 1);
           }}
@@ -24,8 +26,8 @@ function Main() {
         </button>
       </div>
 
-      <Colorful /> 
-      
+      <Colorful name={count} />
+      {/* if agr props-> money in future change hota h to tb memo render kr dega es function jb parent render krega kyu ki value chnage hogi */}
     </>
   );
 }
