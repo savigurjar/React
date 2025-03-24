@@ -31,10 +31,12 @@ img{
 }
 .cards{
     text-align: center;
-    border: 2px black solid;
+    border: 3px darkgrey solid;
+    border-radius: 5px;
     margin-left: 20px;
     margin-top: 20px;
     padding: 20px 10px;
+    color: gray;
 }
 
 .dbtn{
