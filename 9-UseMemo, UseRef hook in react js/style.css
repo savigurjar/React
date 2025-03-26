@@ -1,0 +1,10 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(28, 4, 51);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
