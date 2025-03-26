@@ -1,0 +1,1 @@
+old function = setInterval : settime(time+1) call it after 1s second
