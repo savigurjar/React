@@ -1,0 +1,1 @@
+i can access parent state varible , usko as a props bhejna pdhta h then destructure{}
