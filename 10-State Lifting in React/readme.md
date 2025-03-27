@@ -15,3 +15,7 @@ Props Passing: count and setCount are passed as props to Increment and Decrement
 
 <!-- useContext Hook -->
 useContext is a react hook that lets you read and subscribe to context from your component
+
+1: create context
+2: provide kr h data ko uske under : children or children ke children
+3: consume context
