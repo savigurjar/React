@@ -1,23 +1,7 @@
 import React, { useEffect, useState } from "react";
+import useFetch from "./useFetch";
 function Main() {
-  const [Profile, setProfiles] = useState([]);
-  const [nuofprofile, setnuofprofile] = useState("");
-  async function generateProfile(count = 20) {
-    try {
-      const ran = Math.floor(1 + Math.random() * 100000);
-      const response = await fetch(
-        `https://api.github.com/users?since=${ran}&per_page=${count}`
-      );
-      const data = await response.json();
-      setProfiles(data);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  }
-  useEffect(() => {
-    generateProfile();
-  }, []);
-
+  const { generateProfile, nuofprofile, setnuofprofile, Profile } = useFetch();
   return (
     <div>
       <div className="dbtn">
