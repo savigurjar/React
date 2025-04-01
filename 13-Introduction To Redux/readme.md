@@ -7,7 +7,7 @@ npm install @reduxjs/toolkit
 
 
 ### **Redux ka Basic Concept**:
-- **Store**: Yeh ek global object hota hai jo poori application ki state ko store karta hai.
+- **confihureStore**: Yeh ek global object hota hai jo poori application ki state ko store karta hai.
 - **Actions**: Yeh ek plain JavaScript object hote hain jo bataate hain ki state me kya change hona chahiye.
 - **Reducers**: Yeh pure functions hote hain jo state ko modify karte hain based on action.
 - **Dispatch**: Iska use karke hum actions ko trigger karte hain taaki state update ho.
