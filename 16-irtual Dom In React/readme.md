@@ -11,3 +11,5 @@ react- batch update , fragmention
 react khud ka DOM create krta h virtual DOM -
 
 react virtal old DOM - Diffing Algorithm - Virtal DOM -> = batch update -> realDOM (with update)
+
+ideal update : samose wale node ko add karo,starting main add kro baki node ko ek ek position piche khiska do , old node ko realse kr do
