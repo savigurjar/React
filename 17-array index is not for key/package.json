@@ -1,0 +1,20 @@
+{
+  "name": "17-array-index-is-not-for-key",
+  "version": "1.0.0",
+  
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.7.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-redux": "^9.2.0"
+  },
+  "devDependencies": {
+    "install": "^0.13.0"
+  }
+}
