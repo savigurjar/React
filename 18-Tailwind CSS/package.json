@@ -2,7 +2,6 @@
   "name": "18-tailwind-css",
   "version": "1.0.0",
   "description": "css ka framework h tailwind",
-
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,6 +11,8 @@
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.4",
     "parcel": "^2.14.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
     "tailwindcss": "^4.1.4"
   }
 }
