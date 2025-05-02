@@ -1,7 +1,7 @@
 // Restaurant.jsx
 import { useState, useEffect } from "react";
-import RestCard from "./RestCard"; // Make sure this path is correct
-
+import RestCard from "./RestCard"; 
+import Shimmer from "./Shimmer";
 export default function Restaurant() {
   const [RestData, setRestData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -38,15 +38,9 @@ export default function Restaurant() {
     fetchData();
   }, []);
 
-  if (isLoading) {
-    return <div className="text-center mt-10">Loading restaurants...</div>;
-  }
-
-  if (hasError) {
-    return <div className="text-center mt-10 text-red-600">Failed to load data.</div>;
-  }
+  
   if (RestData.length === 0) {
-    return <div className="text-center mt-10">No restaurants available.</div>;
+    return <Shimmer/>
   }
 
   return (
