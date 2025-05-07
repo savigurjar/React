@@ -1,7 +1,14 @@
 import { useState } from "react";
+import { addItems, IncrementItems, DecrementItems } from "../Stored/CartSlice";
+import { useDispatch } from "react-redux";
 
 export default function RestInfo({ restData }) {
   const [count, setCount] = useState(0);
+
+  const dispatch = useDispatch();
+
+  
+
   return (
     <>
       <div className="flex flex-col md:flex-row w-full justify-between mb-4 pb-4 border-b border-gray-200">
