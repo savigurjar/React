@@ -1,13 +1,28 @@
-import { useState } from "react";
-import { addItems, IncrementItems, DecrementItems } from "../Stored/CartSlice";
-import { useDispatch } from "react-redux";
+import { useState } from "react"
+import {addItems, IncrementItems, DecrementItems} from "../Stored/CartSlice"
+import { useDispatch, useSelector } from "react-redux";
 
-export default function RestInfo({ restData }) {
-  const [count, setCount] = useState(0);
+export default function RestInfo({restData}){
+  
+  
 
   const dispatch = useDispatch();
+  const items = useSelector(state=>state.cartslice.items);
 
-  
+  const element = items.find(item=>item.id===restData.id);
+  const count = element? element.quantity:0;
+
+  function handleAdditems(){
+    dispatch(addItems(restData));
+  }
+
+  function handleIncrementItems(){
+    dispatch(IncrementItems(restData));
+  }
+
+  function handleDecrementItems(){
+    dispatch(DecrementItems(restData));
+  }
 
   return (
     <>
@@ -53,21 +68,21 @@ export default function RestInfo({ restData }) {
           {count === 0 ? (
             <button
               className="absolute bottom-2 right-4 md:right-6 rounded-lg text-sm md:text-base font-semibold text-green-600 px-4 py-2 shadow-lg border border-white bg-white hover:bg-green-50 transition-all duration-200"
-              onClick={() => setCount(1)}
+              onClick={() => handleAdditems()}
             >
               ADD
             </button>
           ) : (
             <div className="absolute bottom-2 right-4 md:right-6 flex items-center gap-3 text-green-600 text-lg md:text-xl font-semibold px-4 py-2 bg-white border border-white shadow-lg rounded-lg">
               <button
-                onClick={() => setCount(count - 1)}
+                onClick={() => handleDecrementItems()}
                 className="hover:text-red-600 transition"
               >
                 −
               </button>
               <span>{count}</span>
               <button
-                onClick={() => setCount(count + 1)}
+                onClick={() => handleIncrementItems()}
                 className="hover:text-green-800 transition"
               >
                 +

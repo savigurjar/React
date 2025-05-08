@@ -6,6 +6,7 @@ import RestaurantMenu from "./Component/RestaurantMenu";
 import SearchFood from "./Component/SearchFood";
 import SecondaryHome from "./Component/SecondaryHome";
 import { store } from "./Stored/stores";
+import Checkout from "./Component/Checkout";
 import { BrowserRouter, Routes, Route } from "react-router";
 import { Provider } from "react-redux";
 
@@ -27,6 +28,7 @@ function App() {
                 element={<SearchFood />}
               ></Route>
             </Route>
+            <Route path="/Checkout" element={<Checkout />} />
           </Routes>
         </BrowserRouter>
       </Provider>
